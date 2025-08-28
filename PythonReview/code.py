@@ -19,7 +19,30 @@ formatted = longer_phrase.format("Rolf", "Monday")
 ##print(f"{square_feet} square feet is {square_metres:.2f} square metres.")
 
 user_age = int(input("Enter your age: "))
-
 months = user_age * 12
-print(f"Your Age, {user_age}, is equal to {months} months ")
+##print(f"Your Age, {user_age}, is equal to {months} months ")
 
+l = ["Bob", "Rolf", "Anne"] #list 
+t = ("Bob", "Rolf", "Anne") #tuples
+s = {"Bob", "Rolf", "Anne"} #sets
+
+##l.append("Smith")
+##print(l) ###
+
+friends = {"Bob", "Rolf", "Anne"}
+abroad = {"Bob", "Anne"}
+
+##local_friends = friends.difference(abroad)
+##print(local_friends)
+
+local = { "Rolf"}
+abroad = {"Bob", "Anne"}
+
+##friends = local.union(abroad)
+##rint(friends)
+
+art = {"bob", "jen", "rolf", "charlie"}
+science = {"bob", "jen", "adam", "anne"}
+
+both = art.intersection(science)
+print(both)
