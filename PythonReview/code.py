@@ -18,8 +18,8 @@ formatted = longer_phrase.format("Rolf", "Monday")
 ##print(square_metres)
 ##print(f"{square_feet} square feet is {square_metres:.2f} square metres.")
 
-user_age = int(input("Enter your age: "))
-months = user_age * 12
+#user_age = int(input("Enter your age: "))
+#months = user_age * 12
 ##print(f"Your Age, {user_age}, is equal to {months} months ")
 
 l = ["Bob", "Rolf", "Anne"] #list 
@@ -44,5 +44,38 @@ abroad = {"Bob", "Anne"}
 art = {"bob", "jen", "rolf", "charlie"}
 science = {"bob", "jen", "adam", "anne"}
 
-both = art.intersection(science)
-print(both)
+##both = art.intersection(science)
+##print(both)
+
+##day_of_week = input("what day of the week is it today? ").lower()
+
+#if day_of_week == "monday":
+   # print("have a great start to ypur week!")
+
+##elif day_of_week == "tuesday":
+    ##print("Full speed ahead!") 
+
+##else: 
+   ## print("full speed ahead!")
+
+##print("This always runs")
+    
+##The in keyword in python!!!!!!!!!!!!
+
+movies_watched = {"the matrix", "green book", "her"}
+##user_movie = input("enter something yopu have watched recenlty:").lower()
+
+##print(user_movie in movies_watched)
+
+
+number = 7 
+user_input = input("Enter 'y' if yoyu wannna play : ").lower
+
+if user_input == "y": 
+    user_number = int(input("Guess our number: "))
+    if user_number == number:
+        print("You won!")
+    elif abs(number - user_number) == 1: 
+        print
+    else:
+        print("sorry trry again! ")
