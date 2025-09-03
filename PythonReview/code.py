@@ -69,13 +69,26 @@ movies_watched = {"the matrix", "green book", "her"}
 
 
 number = 7 
-user_input = input("Enter 'y' if yoyu wannna play : ").lower
 
-if user_input == "y": 
-    user_number = int(input("Guess our number: "))
-    if user_number == number:
-        print("You won!")
-    elif abs(number - user_number) == 1: 
-        print
-    else:
-        print("sorry trry again! ")
+##while True:
+       ## user_input = input("Would u like to play? (Y/n) ")
+        ##if user_input == "n":
+            ## break
+
+        ##user_number = int(input("Guess our number: "))
+        ##if user_number == number:
+           ## print("You won!")
+        ##elif abs(number - user_number) == 1: 
+          ##  print
+       ## else:
+         
+         ##   print("sorry trry again! ")
+
+
+
+friends = ["yesser", "humberto", "carlos", "jeff", "kenia"]
+
+##for friend in friends:
+
+for friend in range(5):
+    print(f"{friend} is my friend.")
