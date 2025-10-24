@@ -87,8 +87,43 @@ number = 7
 
 
 friends = ["yesser", "humberto", "carlos", "jeff", "kenia"]
-
+starts_s=[]
 ##for friend in friends:
 
-for friend in range(5):
-    print(f"{friend} is my friend.")
+for friend in friends: 
+    if friend.startswith("h"):
+        starts_s.append(friend)
+
+#rint(starts_s)
+#print(friends)
+#print(friends is starts_s)
+#print("friends: ", id(friends), "starts_s", id(starts_s))
+##Allthough the list has the same values doesnt mean they are equal cause theya re suaing a diffecrten memory direcccion but is we compare
+##just the elemets beetween then they are going to be the same , no the same list though
+
+friend_ages = {"Jeff": 27, "Clara": 24 , "Kevin": 33 }
+
+friend_ages["Jeff"]= 28 ##the elemtn in the dictionary 
+
+
+##print(friend_ages);
+
+
+friends = [
+    {"name" : "kevin", "age": 33}, 
+    {"name" : "Clara", "age": 24}, 
+    {"name" : "Jeff", "age": 27}, 
+]
+
+##print(friends[1]["name"]) ##acesss a specifit data in a dicticionary
+
+
+student_attendance = {"Clara": 90, "jeff": 97 , "kevin": 78}
+
+##for student, attendance in student_attendance.items():  access to a values in loop 
+   ## print(f"{student} : {attendance}")
+
+people = [("bod", 42, "Musician"), ("james", 24, "Artist"), ("Harry", 32 , "Lecturer")]
+
+for name, age, profession in people:
+    print(f"Name: {name}, Age:{age}, Profession : {profession}")
