@@ -125,5 +125,59 @@ student_attendance = {"Clara": 90, "jeff": 97 , "kevin": 78}
 
 people = [("bod", 42, "Musician"), ("james", 24, "Artist"), ("Harry", 32 , "Lecturer")]
 
-for name, age, profession in people:
-    print(f"Name: {name}, Age:{age}, Profession : {profession}")
+###for name, age, profession in people:  we need create a cvariabl ef ro easch elemt in the duples 
+   ##print(f"Name: {name}, Age:{age}, Profession : {profession}")
+
+
+person = ("james", 24, "Artist")
+
+name, _, profession= person
+
+##print(name, profession) ## to ignore a data in python
+
+*head, tail = [1, 2, 3, 4, 5]
+
+#print(*head)
+#print(tail)
+
+
+##def user_age_in_days():
+   ## user_age = int(input("Enter your age: "))
+    ##age_days = user_age * 365
+    ##print(f"Your Age in days: {age_days}.")
+
+##user_age_in_days()
+friends = ["Rolf", "Bob"]
+
+#def add_friend():
+   ##friend_name = input("Enter the name: ")
+   
+   #friends.append(friend_name)
+
+#add_friend() 
+#print(friends)
+
+#def say_hello(name):
+   #print(f"Hello, {name}")
+
+#say_hello("meow")
+
+
+
+##def divide(dividend, divisor):
+  ##  if divisor != 0:
+  ##      return dividend / divisor
+  ## else: 
+      ##  return "You Fool!"
+    
+##result = divide(15, 2) * 5
+
+#rint(result)
+
+
+
+##########################################Lamba functions 
+sequence = [1, 3, 5, 9]
+doubled = [(lambda x:x*2)(x)for x in sequence]
+doubled = list(map(lambda x: x*2, sequence))
+print(doubled)
