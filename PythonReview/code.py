@@ -177,7 +177,27 @@ friends = ["Rolf", "Bob"]
 
 
 ##########################################Lamba functions 
-sequence = [1, 3, 5, 9]
-doubled = [(lambda x:x*2)(x)for x in sequence]
-doubled = list(map(lambda x: x*2, sequence))
-print(doubled)
+##sequence = [1, 3, 5, 9]
+#doubled = [(lambda x:x*2)(x)for x in sequence]
+##oubled = list(map(lambda x: x*2, sequence))
+##print(doubled)
+
+#########List comprernesion ###################
+users = [
+    (0, "Bob", "password"), 
+    (1, "Rolf", "bob123"), 
+    (2, "Jose", "longpassjopse"), 
+    (3, "username", "Passwor12")
+   ]
+
+username_mapping = {user[1]: user for user in users}
+
+username_input = input("Enter your username: ")
+password_input = input("Enter your password: ")
+
+_, username, password = username_mapping[username_input]
+
+if password_input == password: 
+    print("Your details are correct")
+else:
+    print("your details are incorrect")
