@@ -129,13 +129,14 @@ people = [("bod", 42, "Musician"), ("james", 24, "Artist"), ("Harry", 32 , "Lect
    ##print(f"Name: {name}, Age:{age}, Profession : {profession}")
 
 
-person = ("james", 24, "Artist")
+#person = ("james", 24, "Artist")
 
-name, _, profession= person
+#name, _, profession= person
 
 ##print(name, profession) ## to ignore a data in python
 
-*head, tail = [1, 2, 3, 4, 5]
+
+#*head, tail = [1, 2, 3, 4, 5]
 
 #print(*head)
 #print(tail)
@@ -147,7 +148,7 @@ name, _, profession= person
     ##print(f"Your Age in days: {age_days}.")
 
 ##user_age_in_days()
-friends = ["Rolf", "Bob"]
+#friends = ["Rolf", "Bob"]
 
 #def add_friend():
    ##friend_name = input("Enter the name: ")
@@ -183,21 +184,40 @@ friends = ["Rolf", "Bob"]
 ##print(doubled)
 
 #########List comprernesion ###################
-users = [
-    (0, "Bob", "password"), 
-    (1, "Rolf", "bob123"), 
-    (2, "Jose", "longpassjopse"), 
-    (3, "username", "Passwor12")
-   ]
+################################################################password and user confirmation 
+##users = [
+   # (0, "Bob", "password"), 
+    #(1, "Rolf", "bob123"), 
+    #(2, "Jose", "longpassjopse"), 
+    #(3, "username", "Passwor12")
+#]
 
-username_mapping = {user[1]: user for user in users}
+#username_mapping = {user[1]: user for user in users}
 
-username_input = input("Enter your username: ")
-password_input = input("Enter your password: ")
+#username_input = input("Enter your username: ")
+#password_input = input("Enter your password: ")
 
-_, username, password = username_mapping[username_input]
+#_, username, password = username_mapping[username_input]
 
-if password_input == password: 
-    print("Your details are correct")
-else:
-    print("your details are incorrect")
+#if password_input == password: 
+   # print("Your details are correct")
+#else:
+   # print("your details are incorrect")
+
+
+#Unpacking with kwargs and args
+##def named(**kwargs):
+    #print(kwargs)
+
+##details = {"name": "bob", "age": 25}
+
+#named(**details)###
+
+def named(**kwargs):
+    print(kwargs)
+
+def print_nicely(**kwargs):
+    for arg, value in kwargs.items():
+         print(f"{arg}: {value}")
+
+print_nicely(name="bob", age=25, city="new york")

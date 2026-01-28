@@ -30,3 +30,5 @@ for x in range(1, get_pages(data)+1):
 df = pd.DataFrame(mainlist)
 
 df.to_csv("charlist.csv", index=False)
+
+
