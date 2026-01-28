@@ -226,3 +226,20 @@ people = [("bod", 42, "Musician"), ("james", 24, "Artist"), ("Harry", 32 , "Lect
 ##using requests library with args and kwargs 
 ## def post(url, data=None, json=None, **kwargs):
     ##return request ("POST", url, data=data, json=json, **kwargs)
+
+
+class Student :
+    def __init__(self, name, grades):
+        self.name = name
+        self.grades = grades
+
+    def average(self):
+     return sum(self.grades) / len(self.grades)
+
+student = Student("clara", (90, 88, 95, 100))
+student2 = Student("mea", (89, 88, 95, 90))
+
+all_students = [student, student2]
+
+for s in all_students:
+    print(f"{s.name} : {s.average()}")
