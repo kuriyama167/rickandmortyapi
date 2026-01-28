@@ -213,11 +213,16 @@ people = [("bod", 42, "Musician"), ("james", 24, "Artist"), ("Harry", 32 , "Lect
 
 #named(**details)###
 
-def named(**kwargs):
-    print(kwargs)
+##def named(**kwargs):
+  ##  print(kwargs)
 
-def print_nicely(**kwargs):
-    for arg, value in kwargs.items():
-         print(f"{arg}: {value}")
+##def print_nicely(**kwargs):
+    
+    ##for arg, value in kwargs.items():
+        ## print(f"{arg}: {value}")
 
-print_nicely(name="bob", age=25, city="new york")
+##print_nicely(name="bob", age=25, city="new york")
+
+##using requests library with args and kwargs 
+## def post(url, data=None, json=None, **kwargs):
+    ##return request ("POST", url, data=data, json=json, **kwargs)
