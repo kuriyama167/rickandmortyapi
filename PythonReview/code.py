@@ -228,18 +228,65 @@ people = [("bod", 42, "Musician"), ("james", 24, "Artist"), ("Harry", 32 , "Lect
     ##return request ("POST", url, data=data, json=json, **kwargs)
 
 
-class Student :
-    def __init__(self, name, grades):
-        self.name = name
-        self.grades = grades
+##class Student :
+    ##def __init__(self, name, grades):
+         ##self.name = name
+         ##self.grades = grades
 
-    def average(self):
-     return sum(self.grades) / len(self.grades)
+     ##def average(self):
+      ##return sum(self.grades) / len(self.grades)
 
-student = Student("clara", (90, 88, 95, 100))
-student2 = Student("mea", (89, 88, 95, 90))
+ ##student = Student("clara", (90, 88, 95, 100))
+ ##student2 = Student("mea", (89, 88, 95, 90))
 
-all_students = [student, student2]
+ ##all_students = [student, student2]
 
-for s in all_students:
-    print(f"{s.name} : {s.average()}")
+ ##for s in all_students:
+     ##print(f"{s.name} : {s.average()}")
+
+
+   ##magic methods __str__  and __repr__
+
+##class Person:
+    
+##def __init__(self, name, age):
+        
+##self.name = name
+        
+##self.age = age
+
+    
+##def __str__(self):
+       
+##return f"Person: {self.name}, Age: {self.age}"
+
+    
+##def __repr__(self):
+        
+##return f"Person('{self.name}', {self.age} )"
+    
+
+##bob = Person("Bob", 25)
+
+##print(bob)  # This will use __str__ method
+##print(repr(bob))  # This will use __repr__ method
+
+
+class Store:
+    def __init__(self, name):
+         self.name = name
+         self.items = []  
+    
+    def add_item(self, name, price):
+        # Create a dictionary with keys name and price, and append that to self.items.
+        self.items.append({"name": name, "price": price})
+
+    def stock_price(self):
+         # Add together all item prices in self.items and return the total.
+        return sum(item["price"] for item in self.items)
+    
+chicken_store = Store("Chicken Store")
+chicken_store.add_item("Chicken 1", 5.99)
+
+
+print(chicken_store.stock_price())  # Output: 13.49
