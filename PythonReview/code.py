@@ -272,21 +272,40 @@ people = [("bod", 42, "Musician"), ("james", 24, "Artist"), ("Harry", 32 , "Lect
 ##print(repr(bob))  # This will use __repr__ method
 
 
-class Store:
-    def __init__(self, name):
-         self.name = name
-         self.items = []  
+##print(bob)  # This will use __str__ method
+##class Store:
+    ##def __init__(self, name):
+         ##self.name = name
+         ##self.items = []  
     
-    def add_item(self, name, price):
+    ##def add_item(self, name, price):
         # Create a dictionary with keys name and price, and append that to self.items.
-        self.items.append({"name": name, "price": price})
+        ##self.items.append({"name": name, "price": price})
 
-    def stock_price(self):
+    ##def stock_price(self):
          # Add together all item prices in self.items and return the total.
-        return sum(item["price"] for item in self.items)
+        ##return sum(item["price"] for item in self.items)
     
-chicken_store = Store("Chicken Store")
-chicken_store.add_item("Chicken 1", 5.99)
+##chicken_store = Store("Chicken Store")
+##chicken_store.add_item("Chicken 1", 5.99)
 
 
-print(chicken_store.stock_price())  # Output: 13.49
+##print(chicken_store.stock_price())  # Output: 13.49##
+
+
+
+
+class ClassTest:
+    def instance_method(self):
+        print(f"Called instance_method of {self}")
+
+    @classmethod
+    def class_method(cls):
+        print(f"Called class_method of {cls}")
+
+    @staticmethod
+    def static_method():
+        print("Called static_method.")
+
+
+ClassTest.static_method()  # No instance or class reference passed
